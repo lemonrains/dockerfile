@@ -8,10 +8,8 @@ https://github.com/docker-library/official-images/blob/355e63c6edddb58eb44e3233c
 #此为修改版，可以参考做法，动态生成用户密码
 https://registry.hub.docker.com/u/cloudesire/tomcat/
 
-自定义的tomcat版本
+#tomcat可配置参数
+TOMCAT_PASS   设置密码
 
-※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
-tomcat可配置参数
-1：TOMCAT_PASS   设置密码
 docker run -d -p 8080:8080 -e TOMCAT_PASS="mypass" cloudesire/tomcat
-※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+
