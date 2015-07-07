@@ -1,4 +1,3 @@
-mysql
 #docker官网提供#
 ###dockerimage地址###
 https://registry.hub.docker.com/_/mysql/
