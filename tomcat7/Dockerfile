@@ -9,9 +9,9 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-ADD create_tomcat_admin_user.sh /root/create_tomcat_admin_user.sh
-ADD run.sh /root/run.sh
+ADD create_tomcat_admin_user.sh /root/run/create_tomcat_admin_user.sh
+ADD run.sh /root/run/run_tomcat.sh
 
-RUN chmod +x /root/*.sh
+RUN chmod +x /root/run/*.sh
 
-CMD ["/root/run.sh"]
+CMD ["/root/run/run_tomcat.sh"]
