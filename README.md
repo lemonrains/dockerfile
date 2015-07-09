@@ -2,11 +2,11 @@
 方便以后学习调用
 
 下面是官网的镜像
-+dockerimage
++ dockerimage
 https://registry.hub.docker.com/repos/library/
 
-+docker documnet
++ docker documnet
 https://github.com/docker-library/official-images
 
-+dockerfile的Github
++ dockerfile的Github
 https://github.com/docker-library
