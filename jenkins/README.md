@@ -1,5 +1,5 @@
 #运行命令
-    docker run -it -p 8080:8080 -v /root/jenkins_home:/root/jenkins/jenkins_home lemonrains/jenkins
+    docker run -it -p 8080:8080 -v /media/psf/Home/Downloads/jenkins_home:/var/jenkins_home  -v /media/psf/Home/Documents/repo:/var/jenkins_home/.m2/repository  lemonrains/jenkins
 
 #最新的jenkins下载地址
 http://mirrors.jenkins-ci.org/war/latest/jenkins.war

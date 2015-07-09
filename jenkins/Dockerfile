@@ -1,16 +1,17 @@
-FROM lemonrains/tomcat7
+FROM jenkins
 
 MAINTAINER lemon <lemonrains@163.com>
 
-WORKDIR /root/
+USER root
 
-RUN mkdir /root/jenkins && mkdir /root/jenkins/jenkins_home
+RUN  \
+           wget  http://archive.apache.org/dist/maven/maven-3/3.2.2/binaries/apache-maven-3.2.2-bin.tar.gz \
+           && tar xvf apache-maven-3.2.2-bin.tar.gz \
+           && mv apache-maven-3.2.2 maven \
+           && mv maven /usr/local/ \
+           && rm apache-maven-3.2.2-bin.tar.gz
 
-ADD http://mirrors.jenkins-ci.org/war/latest/jenkins.war /root/jenkins/jenkins.war
-ADD run_jenkins.sh /root/run/run_jenkins.sh
+ENV M2_HOME /usr/local/maven
+ENV PATH $M2_HOME/bin:$PATH
 
-ENV JENKINS_HOME /root/jenkins/jenkins_home
-
-RUN chmod +x /root/run/*.sh
-
-CMD ["/root/run/run_jenkins.sh"]
+USER jenkins
