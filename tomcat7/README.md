@@ -1,4 +1,6 @@
 #官网提供的版本(有各个版本可以选择)#
+#说明
+该版本继承官网的tomcat7
 
 ##images地址##
 https://registry.hub.docker.com/_/tomcat/
