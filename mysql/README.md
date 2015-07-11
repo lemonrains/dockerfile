@@ -1,5 +1,6 @@
 #说明
 该版本继承官网5.6的mysql
+修改了默认创建的数据库以UTF-8编码
 
 #docker官网提供#
 ###dockerimage地址###

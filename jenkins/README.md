@@ -1,5 +1,6 @@
 #说明
 该版本继承官网最新的jenkins
+主要增加了maven的环境
 
 #运行命令
     docker run -it -p 8080:8080 -v /media/psf/Home/Downloads/jenkins_home:/var/jenkins_home  -v /media/psf/Home/Documents/repo:/var/jenkins_home/.m2/repository  lemonrains/jenkins
