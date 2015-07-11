@@ -14,4 +14,7 @@ RUN  \
 ENV M2_HOME /usr/local/maven
 ENV PATH $M2_HOME/bin:$PATH
 
+#maven的本地仓库
+VOLUME /var/jenkins_home/.m2/repository
+
 USER jenkins
