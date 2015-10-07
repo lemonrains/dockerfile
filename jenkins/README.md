@@ -3,7 +3,7 @@
 主要增加了maven的环境
 
 #运行命令
-    docker run -it -p 8080:8080 -v /media/psf/Home/Downloads/jenkins_home:/var/jenkins_home  -v /media/psf/Home/Documents/repo:/var/jenkins_home/.m2/repository  lemonrains/jenkins
+    docker run -d -p 8087:8080 -v /home/andy/jenkins_home:/var/jenkins_home  -v /usr/local/apache-maven/repo:/var/jenkins_home/.m2/repository --name jenkins lemonrains/jenkins
 
 #最新的jenkins下载地址
 http://mirrors.jenkins-ci.org/war/latest/jenkins.war
