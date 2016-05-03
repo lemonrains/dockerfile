@@ -18,5 +18,5 @@ https://registry.hub.docker.com/u/cloudesire/tomcat/
 ##可配置参数##
 TOMCAT_PASS   设置密码
 
-    docker run -d -p 8088:8080 -e TOMCAT_PASS="tomcat2015" --name tomcat lemonrains/tomcat8
+    docker run -d -p 8088:8080 -e TOMCAT_PASS="tomcat2016" --name tomcat lemonrains/tomcat:8
 
