@@ -1,6 +1,6 @@
 #官网提供的版本(有各个版本可以选择)#
 #说明
-该版本继承官网的tomcat7
+该版本继承官网的tomcat8
 增加了自定义密码的功能
 
 ##images地址##
@@ -13,10 +13,10 @@ https://github.com/docker-library/official-images/blob/355e63c6edddb58eb44e3233c
 https://registry.hub.docker.com/u/cloudesire/tomcat/
 
 #版本补充说明#
-该版本的image是基于jdk7,tomcat7的版本，tomcat默认自动启动，并且随机生成密码
+该版本的image是基于jdk8,tomcat8的版本，tomcat默认自动启动，并且随机生成密码
 
 ##可配置参数##
 TOMCAT_PASS   设置密码
 
-    docker run -d -p 8088:8080 -e TOMCAT_PASS="tomcat2015" --name tomcat lemonrains/tomcat7
+    docker run -d -p 8088:8080 -e TOMCAT_PASS="tomcat2015" --name tomcat lemonrains/tomcat8
 
